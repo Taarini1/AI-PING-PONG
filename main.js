@@ -32,13 +32,17 @@ function setup(){
 
   video.hide();
 
-  posenet=ml5.posenet(video , modelLoaded);
+  posenet=ml5.poseNet(video , modelLoaded);
   posenet.on('pose',gotPoses)
 }
 
 function modelLoaded(){
 
   console.log("Model is Loaded");
+  
+}
+
+function gotPoses(){
   
 }
 
